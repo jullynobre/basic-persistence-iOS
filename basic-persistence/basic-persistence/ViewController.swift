@@ -10,9 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var label: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        let launchedBefore = (UIApplication.shared.delegate as! AppDelegate).didLaunchedBefore()
+        label.text = launchedBefore ? "Isn`t first launch" : "First launch"
     }
 
     override func didReceiveMemoryWarning() {
