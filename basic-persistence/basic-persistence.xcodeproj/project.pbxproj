@@ -12,6 +12,8 @@
 		BE2868CA211DC25C000B4BAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE2868C8211DC25C000B4BAB /* Main.storyboard */; };
 		BE2868CC211DC25D000B4BAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE2868CB211DC25D000B4BAB /* Assets.xcassets */; };
 		BE2868CF211DC25D000B4BAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE2868CD211DC25D000B4BAB /* LaunchScreen.storyboard */; };
+		BE2868D7211DD200000B4BAB /* PickColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2868D6211DD200000B4BAB /* PickColorViewController.swift */; };
+		BE2868D9211DD65C000B4BAB /* UserDeafultsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2868D8211DD65C000B4BAB /* UserDeafultsExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		BE2868CB211DC25D000B4BAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE2868CE211DC25D000B4BAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE2868D0211DC25D000B4BAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE2868D6211DD200000B4BAB /* PickColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickColorViewController.swift; sourceTree = "<group>"; };
+		BE2868D8211DD65C000B4BAB /* UserDeafultsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDeafultsExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				BE2868CB211DC25D000B4BAB /* Assets.xcassets */,
 				BE2868CD211DC25D000B4BAB /* LaunchScreen.storyboard */,
 				BE2868D0211DC25D000B4BAB /* Info.plist */,
+				BE2868D6211DD200000B4BAB /* PickColorViewController.swift */,
+				BE2868D8211DD65C000B4BAB /* UserDeafultsExtension.swift */,
 			);
 			path = "basic-persistence";
 			sourceTree = "<group>";
@@ -136,6 +142,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE2868C7211DC25C000B4BAB /* ViewController.swift in Sources */,
+				BE2868D7211DD200000B4BAB /* PickColorViewController.swift in Sources */,
+				BE2868D9211DD65C000B4BAB /* UserDeafultsExtension.swift in Sources */,
 				BE2868C5211DC25C000B4BAB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

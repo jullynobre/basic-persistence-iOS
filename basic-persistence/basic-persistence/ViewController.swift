@@ -9,21 +9,29 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    @IBOutlet weak var label: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         let launchedBefore = (UIApplication.shared.delegate as! AppDelegate).didLaunchedBefore()
-        label.text = launchedBefore ? "Isn`t first launch" : "First launch"
+        
+        if !launchedBefore {
+            performSegue(withIdentifier: "showPickColor", sender: self)
+        }
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        let selectedColor = UserDefaults.standard.colorForKey(key: "backgroundViewController")
+        
+        self.view.backgroundColor = selectedColor != nil ? selectedColor : UIColor.black
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 
+    
 
 }
 
